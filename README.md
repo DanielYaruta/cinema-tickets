@@ -5,40 +5,6 @@
 
 ---
 
-## Быстрый старт
-
-### 1. Создать базу данных
-
-```bash
-psql -U danielyaruta -c "CREATE DATABASE cinema_db;"
-```
-
-### 2. Настроить подключение
-
-Откройте файл `src/main/resources/config.properties` и при необходимости скорректируйте:
-
-```properties
-db.url=jdbc:postgresql://localhost:5432/cinema_db
-db.user=danielyaruta
-db.password=
-```
-
-> Таблицы создаются **автоматически** при первом запуске через `CREATE TABLE IF NOT EXISTS`.
-
-### 3. Собрать проект
-
-```bash
-mvn clean install
-```
-
-### 4. Запустить
-
-```bash
-mvn exec:java
-```
-
----
-
 ## Команды меню
 
 | # | Команда |
